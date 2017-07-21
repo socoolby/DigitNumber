@@ -20,7 +20,7 @@
     [self.num setFontPadding:12];
     [self.num setFontColor:[UIColor blackColor]];
     [self.num setTextAlias:DN_ALIGH_CENTER];
-    [self.num setContent:@"0123456789:-X"];
+    [self.num setContent:@"0123456789:- X"];
     
     [self.timeView setFontSize:40];
     [self.timeView setFontPadding:8];

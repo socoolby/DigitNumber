@@ -19,8 +19,8 @@
  }
  */
 
-/*1-13: 0,1,2,3,4,5,6,7,8,9,:,-,Unknow*/
-static int const DN[13]={0b111111000,0b001100000,0b011011100,0b011110100,0b101100100,0b110110100,0b110111100,0b011100000,0b111111100,0b111110100,0b000000011,0b000000100,0b111111111};
+/*1-13: 0,1,2,3,4,5,6,7,8,9,:,-,space,Unknow*/
+static int const DN[14]={0b111111000,0b001100000,0b011011100,0b011110100,0b101100100,0b110110100,0b110111100,0b011100000,0b111111100,0b111110100,0b000000011,0b000000100,0b000000000,0b111111111};
 -(instancetype)initWithFrame:(CGRect)frame
 {
     self=[super initWithFrame:frame];
@@ -81,10 +81,12 @@ static int const DN[13]={0b111111000,0b001100000,0b011011100,0b011110100,0b10110
         char c=[self.content characterAtIndex:i];
         if(c>=48 && c<=58){
             [self drawNumber:c-48 indexOfNumber:i stringLength:len];
-        }else if(c==45){
+        }else if(c=='-'){
             [self drawNumber:11 indexOfNumber:i stringLength:len];
-        }else{
+        }else if(c==' '){
             [self drawNumber:12 indexOfNumber:i stringLength:len];
+        }else{
+             [self drawNumber:13 indexOfNumber:i stringLength:len];
         }
     }
 }
