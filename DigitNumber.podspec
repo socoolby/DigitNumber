@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DigitNumber"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "Digit Number"
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/socoolby/DigitNumber.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/socoolby/DigitNumber.git", :tag => "0.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "DigitNumber", "DigitNumber/**/*.{h,m}"
+  s.source_files  = "DigitNumber/DigitNumber.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
