@@ -36,3 +36,10 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
+## Installation with copy file
+copy files on the below to your project
+```
+DigitNumber.h 
+DigitNumber.m
+```
+ 
