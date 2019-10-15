@@ -42,4 +42,11 @@ copy files on the below to your project
 DigitNumber.h 
 DigitNumber.m
 ```
- 
+### How to use
+```
+[self.timeView setFontSize:40];
+[self.timeView setFontPadding:8];
+[self.timeView setFontColor:[UIColor blackColor]];
+[self.timeView setTextAlias:DN_ALIGH_CENTER];
+[self.timeView setContent:@"23:28:08"];
+```
